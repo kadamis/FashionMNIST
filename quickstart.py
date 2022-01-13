@@ -5,7 +5,6 @@ from torchvision import datasets
 from torchvision.transforms import ToTensor, Lambda, Compose
 
 training_data = datasets.FashionMNIST(root="data", train=True, download=True, transform=ToTensor(),)
-
 test_data = datasets.FashionMNIST(root="data", train=False, download=True, transform=ToTensor(),)
 
 train_dataloader = DataLoader(training_data, batch_size=64)
